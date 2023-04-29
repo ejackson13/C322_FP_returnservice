@@ -1,4 +1,4 @@
-package edu.iu.c322.finalproject.returnservice;
+package edu.iu.c322.finalProject.returnservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
