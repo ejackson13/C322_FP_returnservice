@@ -34,7 +34,7 @@ public class returnController {
     //showing items rented by customerId
     //
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin()
 
     @GetMapping("/rentedItems/{id}")
     public List<RentedItemsDto> findAllByCustomerId(@PathVariable int id){
@@ -60,7 +60,7 @@ public class returnController {
     //clicking on the item
     //showing return page for specific customer item
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin()
     @GetMapping("/itemClicked/{id}/{iid}")
     public RentedItemDto findByCustomerAndItemId(@PathVariable int id, @PathVariable int iid){
 
@@ -81,7 +81,7 @@ public class returnController {
 
     // once customer hits final return button, they are moved to another page with reciept of return
     //saves return data
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin()
 
     @GetMapping("/returned/{id}/{iid}")
     public ItemReturnDto giveReceipt(@PathVariable Integer id, @PathVariable Integer iid) {
